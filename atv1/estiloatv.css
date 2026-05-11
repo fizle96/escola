@@ -1,12 +1,34 @@
+body
+{
+background-color: rgb(241, 224, 200);
+background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+}
+overlay
+{
+    position:fixed;
+    width: 100%;
+    height:100%;
+    display:block;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    opacity: 50%;
+background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+pointer-events: none;
+user-select: none;
+}
 div
 {
 display: grid;
-grid-template-columns: 66% 33%;
+grid-template-columns: 33% 33% 33%;
 column-gap: 1%;
 
 }
+
 .cabecalho
 {
+    margin: 0%;
     display: flex;
     height:150px;
 opacity: 1;
@@ -15,48 +37,77 @@ justify-content: center;
 align-items: center;
 font-family:'Times New Roman', Times, serif;
 font-size: 100px;
-color: white;
-border-radius: 5px;
+background-color: transparent;
+border-radius: 10px;
+background-color: white;
 background-image: url("https://static.ndmais.com.br/2025/04/entre-os-livros-mais-longos-ja-publicados-estao-historias-classicas-como-dom-quixote-banco-de-imagens-nd-800x450.png");
+box-shadow: 0 0 10px gray;
+color: rgb(218, 207, 193);
+
 }
+
+
+    
 header
 {
-
+text-align: center;
+background-color: rgb(180, 157, 129);
 }
 .subcabecalho
 {
 text-align: center;
-color: rgb(46, 46, 46);
+color: rgb(19, 19, 19);
+text-decoration: underline;
 }
-paragrafo
+.paragrafo
 {
-grid-column: 1;
+grid-column: 1 / span 2;
 overflow-wrap: break-word;
 text-align: left;
 }
-#p1
+#p1::first-letter
 {
-
-
-
+font-size: 50;
 }
+
 
 box
 {
+    
     text-align: center;
-color: white;
-grid-column: 2;
-background-color: gray;
+
+
 padding: 10px;
 
 }
+#box1
+{
+    background-color: antiquewhite;
+    grid-column: 1/span 2;
+    grid-row: 1;
+    color: black;
+}
+#p3
+{
+    color: white;
+    grid-column: 3;
+    grid-row: 1/span 2;
+    background-color: rgb(68, 68, 68);
+    box-shadow: 0 0 10px rgb(24, 24, 24);
+    outline: 2px dotted black;
+    
+}
 button
 {
-    transition: transform 0.2s ease-in-out
+    transition: transform 0.2s ease-in-out;
+    grid-column: 1;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: rgb(253, 248, 242);
     
 }
 button:hover
 {
+    
 transform: scale(1.1);
 }
 
