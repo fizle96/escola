@@ -1,0 +1,62 @@
+div
+{
+display: grid;
+grid-template-columns: 66% 33%;
+column-gap: 1%;
+
+}
+.cabecalho
+{
+    display: flex;
+    height:150px;
+opacity: 1;
+transition: opacity 1s ease-out;
+justify-content: center;
+align-items: center;
+font-family:'Times New Roman', Times, serif;
+font-size: 100px;
+color: white;
+border-radius: 5px;
+background-image: url("https://static.ndmais.com.br/2025/04/entre-os-livros-mais-longos-ja-publicados-estao-historias-classicas-como-dom-quixote-banco-de-imagens-nd-800x450.png");
+}
+header
+{
+
+}
+.subcabecalho
+{
+text-align: center;
+color: rgb(46, 46, 46);
+}
+paragrafo
+{
+grid-column: 1;
+overflow-wrap: break-word;
+text-align: left;
+}
+#p1
+{
+
+
+
+}
+
+box
+{
+    text-align: center;
+color: white;
+grid-column: 2;
+background-color: gray;
+padding: 10px;
+
+}
+button
+{
+    transition: transform 0.2s ease-in-out
+    
+}
+button:hover
+{
+transform: scale(1.1);
+}
+
